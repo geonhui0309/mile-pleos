@@ -1,0 +1,17 @@
+MILE native vehicle UI assets
+
+Figma reference: Cg7pSir45tMJUElhiyfsVR / 57:5547, 57:5137, 82:11302
+Logo: original MILE wordmark; Figma export, rasterized without redraw.
+Book/back icons: Lucide 0.468.0; exact Figma exports, ISC/MIT notices in LICENSE-lucide.txt.
+SVGs downloaded with curl --compressed; PNGs rasterized locally at 6x, original aspect ratios retained.
+Asta Sans: https://github.com/google/fonts/tree/main/ofl/astasans ; unmodified variable TTF; ../fonts/OFL.txt.
+Color tokens: design/mile.tokens.json copied to ui/mile.tokens.json.
+No full-screen UI screenshots are used as app UI. Place-reference photos and labeled generated album art are content, not screenshots.
+
+Cheomseongdae reference photo: Dudva (2023), CC0. https://commons.wikimedia.org/wiki/File:Cheomseongdae_astronomical_observatory.jpg . Resized from design/assets/cheomseongdae-cc0.jpg; place reference only, not a user photograph or current vehicle view.
+
+Search companion: exact original transparent PNG from user Figma file Cg7pSir45tMJUElhiyfsVR node 21:2869 (MILE/Brand/Companion · Window pebble). Downloaded 2026-11-09 via Figma asset API; byte-identical to design/brand/mile-companion-v1.png. 1312×1199 intrinsic; 512×512 Figma slot, FIT_CENTER, native transform motion only; no face rig or lip sync.
+
+Search motion v2 (2026-11-09): built-in image_gen generated eight pose frames using the original Figma companion as reference. Source atlas, prompt, cell layout: design/brand/search-v2/. APK frames mile_search_v2_0.png through mile_search_v2_7.png; alpha preserved. Bitmap pose animation, not a 3D model/rig. Original Figma PNG retained.
+
+App icon (2026-11-09): Figma Cg7pSir45tMJUElhiyfsVR node 67:10343. Original companion asset rendered into the design’s 144×144 slot (200×200 contain at x=-56, y=0.27) on #1D1E21. Adaptive foreground adds Android safe-zone padding; the header wordmark remains unchanged.

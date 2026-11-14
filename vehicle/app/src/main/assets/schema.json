@@ -1,0 +1,32 @@
+{
+  "packageName": "io.gildongmu.voiceprobe",
+  "appDescription": "MILE is a Gyeongju travel story app providing spoken responses to questions about local places, history and culture.",
+  "invokeWord": "마일",
+  "version": "0.1.0",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "component": "activity",
+        "name": "ASK_STORY_QUESTION",
+        "description": "Respond to a visitor's question about Gyeongju places, history, culture or regional stories using the app's content.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "question": {"type": "string", "description": "The visitor's complete question in their own words."}
+          },
+          "required": ["question"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "component": "activity",
+        "name": "STOP_NEARBY_STORY",
+        "description": "Stop the app's current spoken response and discard any pending question.",
+        "parameters": {"type": "object", "properties": {}, "required": []}
+      }
+    }
+  ]
+}

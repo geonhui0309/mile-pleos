@@ -1,0 +1,104 @@
+{
+  "version": "0.3-mobile-five-tabs",
+  "source": "https://document.pleos.ai/docs/connect/guide/docs-design/foundations/colors",
+  "primitive": {
+    "neutral": {
+      "0": "#FFFFFF",
+      "50": "#F7F8FA",
+      "100": "#EDEEF2",
+      "200": "#E0E1E6",
+      "300": "#C7C9CE",
+      "400": "#A4A8AE",
+      "500": "#686A72",
+      "600": "#44464E",
+      "700": "#313236",
+      "800": "#1D1E21",
+      "900": "#131417"
+    },
+    "mileAmberProposed": {
+      "50": "#FBF5E9",
+      "100": "#F3E4C5",
+      "200": "#EBD09A",
+      "300": "#E0B875",
+      "400": "#C49645",
+      "500": "#A5792D",
+      "600": "#805C1D",
+      "700": "#604415",
+      "800": "#402E12",
+      "900": "#291F10"
+    }
+  },
+  "pleosBasicAliases": {
+    "light": {
+      "basic_00": "neutral.0",
+      "basic_50": "neutral.50",
+      "basic_100": "neutral.100",
+      "basic_200": "neutral.200",
+      "basic_300": "neutral.300",
+      "basic_400": "neutral.400",
+      "basic_500": "neutral.500",
+      "basic_600": "neutral.600",
+      "basic_700": "neutral.700",
+      "basic_800": "neutral.800",
+      "basic_900": "neutral.900"
+    },
+    "dark": {
+      "basic_00": "neutral.900",
+      "basic_50": "neutral.800",
+      "basic_100": "neutral.700",
+      "basic_200": "neutral.600",
+      "basic_300": "neutral.500",
+      "basic_400": "neutral.400",
+      "basic_500": "neutral.300",
+      "basic_600": "neutral.200",
+      "basic_700": "neutral.100",
+      "basic_800": "neutral.50",
+      "basic_900": "neutral.0"
+    }
+  },
+  "mileSemanticProposed": {
+    "light": {
+      "surface.canvas": "neutral.50",
+      "surface.panel": "neutral.0",
+      "mobile.canvas": "neutral.0",
+      "mobile.raised": "neutral.50",
+      "text.primary": "neutral.900",
+      "text.secondary": "neutral.500",
+      "action.fill": "neutral.600",
+      "action.label": "neutral.0",
+      "brand.foreground": "neutral.900",
+      "brand.background": "neutral.100",
+      "brand.onFill": "neutral.0"
+    },
+    "dark": {
+      "surface.canvas": "neutral.800",
+      "surface.panel": "neutral.700",
+      "mobile.canvas": "neutral.800",
+      "mobile.raised": "neutral.700",
+      "text.primary": "neutral.0",
+      "text.secondary": "neutral.400",
+      "action.fill": "neutral.200",
+      "action.label": "neutral.900",
+      "brand.foreground": "neutral.0",
+      "brand.background": "neutral.700",
+      "brand.onFill": "neutral.900"
+    }
+  },
+  "typography": {
+    "familyPreferred": "Asta Sans",
+    "pleosHierarchy": [
+      "Headline",
+      "Title",
+      "Body",
+      "Label"
+    ],
+    "exactScale": "Vehicle Asta Sans: Headline Medium 56/72, Title Medium 36/44, Body Medium 28/36, Label Medium 24/28; confirmed original source 67:11477",
+    "vehicleSizing": "sp, verify physical glyph height and device density; do not reuse browser px"
+  },
+  "status": {
+    "platformGrayscale": "transcribed from official grayscale PNG, 2026-10-29",
+    "brand": "Amber primitive retained as historical proposal; not used by active semantic or V2 screens",
+    "semantic": "MILE proposal, not an exact export of Pleos system semantic tokens",
+    "implementation": "Figma vehicle and 5-tab mobile Light/Dark upgrade; Android app not connected"
+  }
+}

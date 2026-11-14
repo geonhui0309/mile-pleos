@@ -1,0 +1,3 @@
+iPhone 16e Simulator Safari: account linked, Korean journey loaded from the server and rendered without horizontal overflow.
+iPhone 16e Simulator Safari: test JPEG selected through the file input, converted, uploaded, rendered, hidden on disconnect, and restored on reconnect. Server verified one stored photo.
+iPhone 16e Simulator Safari: vehicle-exported .mile entered through file input; trip and embedded image decoded and restored after reload.

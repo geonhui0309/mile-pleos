@@ -1,0 +1,2 @@
+390px mobile viewport: no horizontal overflow; both images decode and fit
+Chrome: import, AI image, photo, duplicate import, reload passed

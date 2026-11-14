@@ -1,0 +1,43 @@
+plugins { id 'com.android.application' }
+
+def releaseApiOrigin = providers.gradleProperty('mileApiOrigin').orElse('').get().trim()
+def releaseApiUrl = ''
+if (releaseApiOrigin) {
+    def origin = new URI(releaseApiOrigin)
+    if (origin.scheme != 'https' || !origin.host || origin.rawUserInfo != null
+            || origin.rawQuery != null || origin.rawFragment != null
+            || !(origin.rawPath in ['', '/'])) {
+        throw new GradleException('mileApiOrigin must be an HTTPS origin without credentials, path, query or fragment')
+    }
+    releaseApiUrl = origin.resolve('/answer').toASCIIString()
+}
+
+android {
+    namespace 'io.gildongmu.voiceprobe'
+    compileSdk 35
+    useLibrary "android.car"
+    buildFeatures { buildConfig true }
+    buildTypes {
+        debug { buildConfigField 'String', 'MILE_API_URL', '"http://127.0.0.1:8765/answer"' }
+        release { buildConfigField 'String', 'MILE_API_URL', groovy.json.JsonOutput.toJson(releaseApiUrl) }
+    }
+    defaultConfig {
+        applicationId 'io.gildongmu.voiceprobe'
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName '0.1.0'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'ai.pleos.playground:TextToSpeech:3.3.1'
+    implementation 'ai.pleos.playground:SpeechToText:3.3.1'
+    androidTestImplementation 'androidx.test:runner:1.6.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+}

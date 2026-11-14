@@ -1,0 +1,9 @@
+
+io.gildongmu.voiceprobe.AlbumSyncTest:.
+
+Time: 0.781
+
+OK (1 test)
+
+
+Chrome at 390x844: photo upload, account isolation, same journey resubmission via HTTP, and fresh local storage retrieval passed

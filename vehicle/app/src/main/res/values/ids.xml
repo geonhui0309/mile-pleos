@@ -1,0 +1,24 @@
+<resources>
+    <item name="search_companion" type="id" />
+    <item name="barge_in_mode" type="id" />
+    <item name="microphone_state" type="id" />
+    <item name="screen_settings" type="id" />
+    <item name="theme_system" type="id" />
+    <item name="theme_light" type="id" />
+    <item name="theme_dark" type="id" />
+    <item name="pause_audio" type="id" />
+    <item name="discover_story" type="id" />
+    <item name="journey_records" type="id" />
+    <item name="journey_stage" type="id" />
+    <item name="quote_choices" type="id" />
+    <item name="save_quote" type="id" />
+    <item name="ask_voice" type="id" />
+    <item name="stop_audio" type="id" />
+    <item name="story_play" type="id" />
+    <item name="question_input" type="id" />
+    <item name="question_send" type="id" />
+    <item name="answer_text" type="id" />
+    <item name="transcript_text" type="id" />
+    <item name="conversation_mode" type="id" />
+    <item name="page_title" type="id" />
+</resources>

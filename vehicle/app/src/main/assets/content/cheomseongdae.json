@@ -1,0 +1,103 @@
+{
+  "id": "gyeongju_cheomseongdae_v1",
+  "title": "첨성대에서 하늘을 읽던 사람들",
+  "place": "경주 첨성대",
+  "reviewedAt": "2026-10-28",
+  "status": "prototype_fact_checked_not_field_validated",
+  "visibility": {
+    "fieldVerified": false,
+    "driveByWindowVerified": false,
+    "cueEnabled": false
+  },
+  "rights": {
+    "script": "MILE original wording based on factual references",
+    "thirdPartyImagesOrAudioIncluded": false,
+    "sourceTextCopied": false
+  },
+  "sources": [
+    {
+      "id": "KHS_SIGN",
+      "title": "국가유산포털 경주 첨성대 안내판",
+      "url": "https://www.heritage.go.kr/heri/cul/culGuidePostDetail.do?ccbaCpno=1113700310000&ccgbGbtype=IND&ccgbGbtypeNo=2&pageNo=1_5_0_0"
+    },
+    {
+      "id": "KHS_DETAIL",
+      "title": "국가유산청 나만의 국가유산 해설사 경주 첨성대",
+      "url": "https://my.heritage.go.kr/public/commentary/culSelectDetail.do?ccbaAsno=0000310000000&ccbaCpno=1113700310000&ccbaCtcd=37&ccbaKdcd=11"
+    }
+  ],
+  "stories": {
+    "child": "첨성대는 옛 신라 사람들이 하늘을 살피던 곳으로 알려져 있어요. 돌을 층층이 쌓았지만 가운데는 둥글고 위쪽은 조금 가늘어요. 옛사람들은 별의 움직임을 살피며 농사철을 판단하는 데 도움을 얻었어요. 다음에 가까이 가면 둥근 몸통 위에 어떤 모양의 돌이 놓였는지 찾아보세요.",
+    "adult": "첨성대는 신라의 천문 관측 유산으로, 선덕여왕 재위 시기에 세워진 것으로 추정됩니다. 약 9미터 높이의 몸통에는 돌이 27개 층으로 쌓여 있고, 맨 위에는 긴 돌이 우물 정 자 형태로 놓여 있습니다. 당시 하늘 관측은 농사와 국가 운영에 연결됐습니다. 다만 구체적인 관측 방식에는 해석의 여지가 있습니다."
+  },
+  "facts": [
+    {
+      "id": "purpose",
+      "text": "첨성대는 신라의 천문 관측 시설로 알려져 있어요. 하늘 관측은 농사 시기와 국가의 길흉을 판단하는 일에 연결됐어요.",
+      "sourceIds": [
+        "KHS_SIGN",
+        "KHS_DETAIL"
+      ]
+    },
+    {
+      "id": "date",
+      "text": "선덕여왕이 다스리던 632년부터 647년 사이에 세워진 것으로 추정돼요. 정확한 건립 연도와 실제 설계자·시공자는 이 자료만으로 확정할 수 없어요.",
+      "sourceIds": [
+        "KHS_SIGN",
+        "KHS_DETAIL"
+      ]
+    },
+    {
+      "id": "height",
+      "text": "높이는 약 9미터예요. 이 대본에서는 반올림한 높이를 사용해요.",
+      "sourceIds": [
+        "KHS_DETAIL"
+      ]
+    },
+    {
+      "id": "tiers",
+      "text": "둥근 몸통 부분의 돌은 27개 층으로 쌓여 있어요. 이것은 돌 27개라는 뜻은 아니에요.",
+      "sourceIds": [
+        "KHS_SIGN",
+        "KHS_DETAIL"
+      ]
+    },
+    {
+      "id": "shape",
+      "text": "몸통은 둥글고 위로 갈수록 좁아져요. 맨 위에는 긴 돌을 맞물려 우물 정 자 모양을 만들었어요. 그 형태를 택한 정확한 이유는 여기서 확정하지 않을게요.",
+      "sourceIds": [
+        "KHS_SIGN"
+      ]
+    },
+    {
+      "id": "method",
+      "text": "사다리로 중간 구멍에 들어간 뒤 위로 올라갔을 것으로 해석돼요. 옛 기록과 구조를 바탕으로 한 설명이며, 당시 관측 과정을 직접 확인한 것은 아니에요.",
+      "sourceIds": [
+        "KHS_SIGN",
+        "KHS_DETAIL"
+      ]
+    }
+  ],
+  "unsupported": [
+    "정확한 건립 날짜",
+    "설계자나 시공자 실명",
+    "돌 개수의 확정적 상징 해석",
+    "실시간 운영 시간과 입장료",
+    "현재 차량에서의 가시성",
+    "관측 방식의 단정"
+  ],
+  "storyFactIds": {
+    "child": [
+      "purpose",
+      "shape"
+    ],
+    "adult": [
+      "purpose",
+      "date",
+      "height",
+      "tiers",
+      "shape",
+      "method"
+    ]
+  }
+}

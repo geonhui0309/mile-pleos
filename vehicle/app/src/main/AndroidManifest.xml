@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE" />
+    <uses-permission android:name="pleos.car.permission.STT_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+    <application android:label="마일" android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_mile" android:roundIcon="@mipmap/ic_mile"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <provider android:name=".TripExportProvider" android:authorities="${applicationId}.trip-export" android:exported="false" android:grantUriPermissions="true" />
+        <activity android:name=".MainActivity" android:icon="@mipmap/ic_mile" android:exported="true" android:launchMode="singleTop"
+            android:resizeableActivity="true"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ASK_STORY_QUESTION" />
+                <action android:name="STOP_NEARBY_STORY" />
+                <action android:name="io.gildongmu.voiceprobe.ASK_STORY_QUESTION" />
+                <action android:name="io.gildongmu.voiceprobe.STOP_NEARBY_STORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
